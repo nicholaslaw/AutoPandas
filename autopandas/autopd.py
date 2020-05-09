@@ -13,7 +13,7 @@ class AutoPandas:
             contains names of columns to ignore
         """
         self.df = df
-        if ignore_cols:
+        if not ignore_cols:
             ignore_cols = []
         self.ignore_cols = ignore_cols
         self.binary_cols = []
